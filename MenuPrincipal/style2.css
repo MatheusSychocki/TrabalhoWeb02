@@ -1,0 +1,207 @@
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--corfundo);
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+    --corfundo: #fffdfd;
+    --letras: black;
+    --lightmode: #e0d9e4;
+}
+
+.header {
+    background-color: var(--lightmode);
+    padding-top: 10px;
+    padding-bottom: 7px;
+}
+
+.imagem {
+    position: absolute;
+    left: 93%;
+    top: 10px;
+}
+
+.buscar {
+    position: relative;
+    margin-left: 70vh;
+    margin-top: -15vh;
+}
+
+.saldo {
+    position: absolute;
+    right: 10%;
+    top: 30px;
+}
+
+input[type="text"] {
+    position: relative;
+    border-radius: 20px;
+    padding-left: 150px;
+    padding-top: 15px;
+    text-align: left;
+    border-color: black;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    border-style: solid;
+}
+
+input[type="search"] {
+    margin-right: 100px;
+    padding-left: 5%;
+    width: 70px;
+    border: none;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+footer {
+    background-color: var(--lightmode);
+    color: var(--letras);
+    text-align: center;
+    font-size: 12px;
+    font: 1em sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.menubaixo nav {
+    position: absolute;
+    left: 40%;
+    width: 30%;
+    bottom: 10vh;
+    background-color: silver;
+}
+
+.flex-container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+div.flex-container {
+    width: 195%;
+}
+
+.cotacao01 {
+    background-color: red;
+    padding: 100px;
+}
+
+.cotacao02 {
+    background-color: blue;
+    padding: 100px;
+}
+
+.cotacao03 {
+    background-color: green;
+    padding: 100px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}

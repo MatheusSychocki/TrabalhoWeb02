@@ -1,0 +1,194 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    --corfundo: #fffdfd;
+    --letras: black;
+    --lightmode: #e0d9e4;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--corfundo);
+    padding-bottom: 50px;
+    position: relative;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 13px, 15px;
+}
+
+.conteudo {
+    padding: 0 15px;
+}
+
+.header {
+    background: var(--lightmode);
+    color: var(--letras);
+    padding: 15px;
+    right: 0%;
+    text-align: center;
+    font: 1em sans-serif;
+}
+
+.dark {
+    float: right;
+    margin: 16px 0;
+}
+
+.menu {
+    margin: 150px auto;
+    background-color: rgb(250, 241, 241);
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    float: none;
+    padding: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.menu label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.menu .btn-esqueci {
+    display: block;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: var(--lightmode);
+    color: var(--letras);
+    text-align: center;
+    font-size: 12px;
+    font: 1em sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+input:checked[type="checkbox"] {
+    background: #363a3b;
+}
+
+input[type=checkbox]:checked~* {
+    filter: invert(1);
+}
+
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgb(0, 0, 0, .2);
+    transition: .5s;
+}
+
+input:checked[type="checkbox"]:before {
+    left: 20px;
+}
+
+input[type="button"] {
+    margin-top: 15px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+input[type="password"] {
+    margin-top: 15px;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+input[type="text"] {
+    border-radius: 4px;
+    padding: 7px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+a {
+    font-size: 13px;
+}
+
+@media all and (max-width: 768px) {
+    .header h1 {
+        text-align: left;
+        width: 75%;
+        float: left;
+        display: block;
+        margin: 0;
+        font-size: 25px;
+        min-height: 48px;
+        display: flex;
+        text-align: center;
+    }
+    .header .dark {
+        margin: 0;
+        width: 25%;
+        float: right;
+    }
+    .header .dark label {
+        font-size: 14px;
+    }
+    .menu {
+        margin: 100px auto;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+}
