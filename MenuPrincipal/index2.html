@@ -15,9 +15,9 @@
 
 
     <div class="row">
-        <div class="col-3 col-s-3 menu">
+        <div class="col-3 col-s-6 menu">
             <div class="buscar">
-                <input type="text" id="buscartop" placeholder="Buscar" width="30" height="60">
+                <input type="text"  class="btn-buscar" placeholder="Buscar" width="30" height="60">
             </div>
         </div>
         <div class="saldo">
@@ -27,42 +27,76 @@
         </div>
     </div>
     <div class="imagem">
-        <img src="user.png" id="imagem" width="50" height="50">
-        <input type="button" value="Outro">
+        <img src="user.png" id="imagem" width="50" height="50"><br>
+        <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
     </div>
 
     <div class="col-6 col-s-9">
         <div class="flex-container">
-            <div class="cotacao01">
-                <label for="">Cotações01</label>
+            <div class="cotacao">
+                <form action="" id="form-cotacao">
+                    <label for="">Cotação 01</label>
+                    <input type="button" id="btn-compra" value="Comprar">
+                    <input type="button" value="Vender" id="btn-venda">
+                </form>
             </div>
-            <div class="cotacao02">
-                <label for="">Cotações02</label>
+            <div class="cotacao">
+                <form action="" id="form-cotacao">
+                    <label for="">Cotação 02</label>
+                    <input type="button" id="btn-compra" value="Comprar">
+                    <input type="button" value="Vender" id="btn-venda">
+                </form>
             </div>
-            <div class="cotacao03">
-                <label for="">Cotações03</label>
+            <div class="cotacao">
+                <form action="" id="form-cotacao">
+                    <label for="">Cotação 03</label> 
+                    <input type="button"  id="btn-compra" value="Comprar"><br>
+                    <input type="button" value="Vender" id="btn-venda">
+                </form>
             </div>
-            <div class="cotacao04">
-                <label for="">Cotações04</label>
+            <div class="cotacao">
+                <form action="" id="form-cotacao">
+                    <label for="">Cotação 04</label>
+                    <input type="button" id="btn-compra" value="Comprar">
+                    <input type="button" value="Vender" id="btn-venda">
+                </form>
             </div>
-            <div class="cotacao05">
-                <label for="">Cotações05</label>
+            <div class="cotacao">
+                <form action="" id="form-cotacao">
+                    <label for="">Cotação 05</label>
+                    <input type="button" id="btn-compra" value="Comprar">
+                    <input type="button" value="Vender" id="btn-venda">
+                </form>
             </div>
         </div>
         </form>
     </div>
     </div>
-    <div class="menubaixo">
+    <!--  <div class="menubaixo">
         <nav>
             <img src="card.png" id="imagem" width="50" height="50">
             <img src="buy.png" id="imagem" width="50" height="50">
             <img src="chat.png" id="imagem" width="50" height="50">
         </nav>
-    </div>
+    </div>-->
     </div>
 
-    <footer>
-        <p>Copyright FURB - 2020</p>
+    <footer class="footer">
+        <form action="" class="contato">
+            <h4>Contato</h4>
+            <input type="text" id="lb-nome" placeholder="Nome"><br>
+            <input type="email"id="lb-email" placeholder="E-mail"><br>
+            <input type="number" id="lb-tel"placeholder="Telefone"><br>
+            <input type="button" value="Enviar" id="btn-cont-enviar">
+            <input type="button" value="Cancelar" id="btn-cont-cancelar">
+        </form>
     </footer>
 
 </body>

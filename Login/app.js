@@ -8,15 +8,15 @@ const getStyle = (element, style) =>
 
 
 const initialColors = {
-    corfundo: getStyle(html, "--corfundo"),
-    lightmode: getStyle(html, "--lightmode"),
-    letras: getStyle(html, "--letras"),
+    fundo: getStyle(html, "--corfundo"),
+    claro: getStyle(html, "--lightmode"),
+    fonte: getStyle(html, "--letras"),
 }
 
 const darkMode = {
-    corfundo: "#333333",
-    lightmode: "rgb(37, 34, 34)",
-    letras: "#fffdfd"
+    fundo: "#333333",
+    claro: "rgb(37, 34, 34)",
+    fonte: "#fffdfd"
 }
 
 const transformKey = key =>
