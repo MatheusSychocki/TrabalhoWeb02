@@ -221,12 +221,21 @@ footer {
     border-color: white;
     font-size: 20px;
 }
-.menubaixo nav {
-    position: absolute;
-    left: 40%;
-    width: 30%;
-    bottom: 10vh;
-    background-color: silver;
+.menubaixo a {
+    background-color: var(--claro);
+    border-color: var(--claro);
+    font-size: 20px;
+    text-decoration:none;
+    color: black;
+}
+
+.menubaixo a:hover{
+    background-color: #838485;
+    color: white;
+}
+
+.menubaixo {
+    text-align: center;
 }
 
 /* Menu abaixo da imagem */
