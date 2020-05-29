@@ -11,13 +11,16 @@ const initialColors = {
     fundo: getStyle(html, "--fundo"),
     claro: getStyle(html, "--claro"),
     fonte: getStyle(html, "--letras"),
-
+    fontelb: getStyle(html, "--fontelb"),
+    fonteCotacao: getStyle(html, "--fonte-cotacao"),
 }
 
 const darkMode = {
     fundo: "#333333",
     claro: "rgb(37, 34, 34)",
-    fonte: "#fffdfd"
+    fonte: "#fffdfd",
+    fontelb: "#rgb(37, 34, 34)",
+    fonteCotacao: "rgb(37, 34, 34)"
 }
 
 const transformKey = key =>
@@ -34,7 +37,3 @@ const changeColors = (colors) => {
 checkbox.addEventListener("change", ({ target }) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })
-
-limpaCampos function(onl){
-    document.getElementById('campo').value='';
-}
