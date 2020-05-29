@@ -8,9 +8,10 @@ const getStyle = (element, style) =>
 
 
 const initialColors = {
-    fundo: getStyle(html, "--corfundo"),
-    claro: getStyle(html, "--lightmode"),
+    fundo: getStyle(html, "--fundo"),
+    claro: getStyle(html, "--claro"),
     fonte: getStyle(html, "--letras"),
+
 }
 
 const darkMode = {

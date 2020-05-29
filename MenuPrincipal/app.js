@@ -37,3 +37,27 @@ const changeColors = (colors) => {
 checkbox.addEventListener("change", ({ target }) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })
+
+function validar() {
+    var nome = contato.nome.value;
+    var email = contato.email.value;
+    var numero = contato.numero.value;
+
+        if (nome == "") {
+        alert('Preencha o campo com seu nome');
+        contato.nome.focus();
+        return false;
+        }
+
+        if (email == "") {
+        alert('Preencha o campo com seu e-mail');
+        contato.email.focus();
+        return false;
+        }
+
+        if (numero == "" || numero.lenght > 11) {
+        alert('Insira um numero válido');
+        contato.numero.focus();
+        return false;
+        }
+}
