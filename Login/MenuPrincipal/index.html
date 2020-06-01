@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo">Nome da Empresa</a>
+        <div class="header-right">
+            <div class="buscar">
+                <input type="text" class="btn-buscar" placeholder="Buscar" width="30" height="60">
+            </div>
+            <div class="saldo">
+                <img src="olho.png" id="imagem" width="15" height="15">
+                <label for="">Saldo</label><br>
+                <input type="search" placeholder="10000">
+            </div>
+        </div>
+        <div class="dark">
+            <label>Dark Mode</label><br>
+            <input type="checkbox" name="theme">
+        </div>
+        <div class="imagem">
+            <img src="user.png" id="imagem" width="50" height="50"><br>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">dark Mode</a>
+                    <a href="#">Configurações</a>
+                    <a href="#">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 col-s-9">
+            <div class="flex-container">
+                <div class="cotacao">
+                    <form action="" id="form-cotacao">
+                        <div class="alinha">
+                            <label id="lb-cotacao" for="">Ouro</label><br>
+                            <div class="btn">
+                                <input type="button" id="btn-compra" value="Comprar">
+                                <input type="button" value="Vender" id="btn-venda">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="cotacao">
+                    <form action="" id="form-cotacao">
+                        <label for="" id="lb-cotacao">Real</label><br>
+                        <div class="btn">
+                            <input type="button" id="btn-compra" value="Comprar">
+                            <input type="button" value="Vender" id="btn-venda">
+                        </div>
+                    </form>
+                </div>
+                <div class="cotacao">
+                    <form action="" id="form-cotacao">
+                        <label for="" id="lb-cotacao">Dólar</label><br>
+                        <div class="btn">
+                            <div class="btn">
+                                <input type="button" id="btn-compra" value="Comprar">
+                                <input type="button" value="Vender" id="btn-venda">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="cotacao">
+                    <form action="" id="form-cotacao">
+                        <label for="" id="lb-cotacao">Yen</label><br>
+                        <div class="btn">
+                            <input type="button" id="btn-compra" value="Comprar">
+                            <input type="button" value="Vender" id="btn-venda">
+                        </div>
+                    </form>
+                </div>
+                <div class="cotacao">
+                    <form action="" id="form-cotacao">
+                        <label for="" id="lb-cotacao">Euro</label><br>
+                        <div class="btn">
+                            <input type="button" id="btn-compra" value="Comprar">
+                            <input type="button" value="Vender" id="btn-venda">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </form>
+            <ul class="menubaixo">
+                    <a href="#">Conta</a>
+                    <a href="#">Cartão</a>
+                    <a href="#">Pontos</a>
+                    <a href="#">Duvidas</a>
+                    </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <form name="contato" action="" id="contato" class="contato">
+            <h4>Contato</h4>
+            <input type="text" name="nome" id="lb-nome" placeholder="Nome"><br>
+            <input type="email" name="email" id="lb-email" placeholder="E-mail"><br>
+            <input type="number" name="numero" id="lb-tel" placeholder="Telefone"><br>
+            <textarea id="textarea" placeholder="Menssagem"></textarea><br>
+            <input type="button" value="Enviar" id="btn-cont-enviar" onclick="validar()">
+            <input type="button" value="Cancelar" onclick="" id="btn-cont-cancelar">
+        </form>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
